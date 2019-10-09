@@ -1,0 +1,101 @@
+@include('inc/header.html')
+<div class="container">
+    <div class="filter mt-6 mb-3">
+        <div class="row flex-xl-nowrap">
+            <div class="col-sm-6 col-lg-4 col-xl-24">
+                <div class="filter__item">
+                    <label class="checkbox-1">
+                        <input type="checkbox" checked>
+                        <span>Смартфоны</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-auto">
+                <div class="filter__item">
+                    <label class="checkbox-1">
+                        <input type="checkbox" checked>
+                        <span>Планешты/ноутбуки</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-24">
+                <div class="filter__item">
+                    <label class="checkbox-1">
+                        <input type="checkbox">
+                        <span>Часы</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-24">
+                <div class="filter__item">
+                    <label class="checkbox-1">
+                        <input type="checkbox">
+                        <span>Аксессуары</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-24">
+                <div class="filter__item">
+                    <label class="checkbox-1">
+                        <input type="checkbox">
+                        <span>Другое</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mb-6">
+    <div class="row catalog">
+        @loop('inc/catalog-item.html', [
+        {
+        "title":"Iphone 5",
+        "price":"519",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Apple iPhone Xs 64Gb Gold (MT9G2)",
+        "price":"699",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Apple Mac Mini 128GB Space Gray",
+        "price":"1200",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Apple AirPods 2019 (2 поколения) with Charging Case",
+        "price":"400",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Apple MacBook Air 13 256Gb (MQD42) 2017",
+        "price":"777",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Iphone 11 Pro",
+        "price":"999",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"Фитнес-трекер Xiaomi Mi Smart Band 4 (Black) Global",
+        "price":"570",
+        "image":"img/demo/product-1.jpg"
+        },
+        {
+        "title":"MacBook Pro 15",
+        "price":"549",
+        "image":"img/demo/product-1.jpg"
+        }
+        ])
+    </div>
+    <div class="mt-3 text-muted text-center"><span class="text-orange">*</span> Указанные цены включают стоимость товара
+        и доставки
+    </div>
+</div>
+
+
+@include('inc/footer.html')
